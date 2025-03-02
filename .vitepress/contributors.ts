@@ -83,7 +83,7 @@ const plainTeamMembers: CoreTeam[] = [
     mastodon: 'https://elk.zone/m.webtoo.ls/@AriPerkkio',
     sponsor: 'https://github.com/sponsors/AriPerkkio',
     title: 'Open source engineer',
-    desc: 'Core team member of Vitest',
+    desc: 'Core team member of Vitest Core team member of Vitest',
     org: 'StackBlitz',
     orgLink: 'https://stackblitz.com/',
   },

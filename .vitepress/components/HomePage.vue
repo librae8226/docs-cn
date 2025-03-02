@@ -9,30 +9,9 @@ import { sponsors } from '../sponsors'
       <main class="main">
         <VPHomeSponsors
           v-if="sponsors"
-          message="Vitest 是优秀的开源软件，这得益于这些出色的赞助商。"
+          message="投资组合"
           :data="sponsors"
         />
-        <div class="action">
-          <a
-            class="sponsor"
-            href="https://github.com/sponsors/vitest-dev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            赞助 Vitest
-          </a>
-        </div>
-        <p flex flex-col items-center mt-10 class="text-center opacity-75">
-          <a href="https://www.netlify.com" rel="noopener noreferrer">
-            <img
-              src="/netlify.svg"
-              alt="Deploys by Netlify"
-              width="114"
-              height="151"
-              decoding="async"
-            >
-          </a>
-        </p>
       </main>
     </div>
   </div>

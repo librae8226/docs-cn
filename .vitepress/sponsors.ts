@@ -9,12 +9,12 @@ const vitestSponsors = {
     {
       name: 'VoidZero',
       url: 'https://voidzero.dev',
-      img: '/voidzero.svg',
+      img: 'https://www.chvc.com.cn/data/upload/20180408/1523156073295709.png',
     },
     {
       name: 'NuxtLabs',
       url: 'https://nuxtlabs.com',
-      img: '/nuxtlabs.svg',
+      img: 'https://www.chvc.com.cn/data/upload/20170818/1503035919991104.png',
     },
     {
       name: 'Stackblitz',
@@ -45,18 +45,8 @@ const vitestSponsors = {
 
 export const sponsors = [
   {
-    tier: 'Special Sponsors',
+    //tier: ' ',
     size: 'big',
     items: vitestSponsors.special,
-  },
-  {
-    tier: 'Platinum Sponsors',
-    size: 'big',
-    items: vitestSponsors.platinum,
-  },
-  {
-    tier: 'Gold Sponsors',
-    size: 'medium',
-    items: vitestSponsors.gold,
-  },
+  }
 ]

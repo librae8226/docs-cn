@@ -29,7 +29,7 @@ import { transformHead } from './scripts/transformHead'
 export default ({ mode }: { mode: string }) => {
   return withPwa(defineConfig({
     lang: 'en-US',
-    title: vitestName,
+    title: ' ',
     description: vitestDescription,
     srcExclude: [
       '**/guide/examples/*',
@@ -105,7 +105,7 @@ export default ({ mode }: { mode: string }) => {
           ],
     },
     themeConfig: {
-      logo: '/logo.svg',
+      logo: '/logo-b.svg',
 
       editLink: {
         pattern: 'https://github.com/vitest-dev/vitest/edit/main/docs/:path',
@@ -134,17 +134,12 @@ export default ({ mode }: { mode: string }) => {
       },
 
       nav: [
-        { text: '指南 & API', link: '/guide/', activeMatch: '^/(guide|api)/(?!browser)' },
-        { text: '配置', link: '/config/', activeMatch: '^/config/' },
-        { text: '浏览器模式', link: '/guide/browser', activeMatch: '^/guide/browser/' },
+        { text: '投资组合', link: '/portfolio/'},
+        { text: '团队介绍', link: '/team'},
+        { text: '联系我们', link: '/contact'},
         {
           text: '相关链接',
           items: [
-            {
-              text: '高级 API',
-              link: '/advanced/api/',
-              activeMatch: '^/advanced/',
-            },
             {
               items: [
                 {
@@ -160,49 +155,8 @@ export default ({ mode }: { mode: string }) => {
 
           ],
         },
-        {
-          text: `v${version}`,
-          items: [
-            {
-              items: [
-                {
-                  text: `v${version}`,
-                  link: `https://github.com/vitest-dev/vitest/releases/tag/v${version}`,
-                },
-                {
-                  text: '更新日志',
-                  link: releases,
-                },
-                {
-                  text: '贡献指南',
-                  link: contributing,
-                },
-              ],
-            },
-            {
-              items: [
-                {
-                  text: '未发布',
-                  link: 'https://main.vitest.dev/',
-                },
-                {
-                  text: 'v0.x',
-                  link: 'https://v0.vitest.dev/',
-                },
-                {
-                  text: 'v1.x',
-                  link: 'https://v1.vitest.dev/',
-                },
-                {
-                  text: 'v2.x',
-                  link: 'https://v2.vitest.dev/',
-                },
-              ],
-            },
-          ],
-        },
       ],
-
+/*
       sidebar: {
         '/guide/browser': [
           {
@@ -412,7 +366,7 @@ export default ({ mode }: { mode: string }) => {
             ],
           },
         ],
-      },
+      },*/
     },
     pwa,
     transformHead,
