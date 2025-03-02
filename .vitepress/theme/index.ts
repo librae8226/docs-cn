@@ -11,6 +11,7 @@ import '../style/vars.css'
 import 'uno.css'
 import '@shikijs/vitepress-twoslash/style.css'
 import 'virtual:group-icons.css'
+import { useRoute } from 'vitepress'
 
 if (inBrowser) {
   import('./pwa')
@@ -19,8 +20,11 @@ if (inBrowser) {
 export default {
   extends: DefaultTheme,
   Layout() {
+    const route = useRoute()
+    const shouldInsert = route.path === '/portfolio/'
+    console.log('Current route path:', route.path) // 添加调试信息
     return h(DefaultTheme.Layout, null, {
-      'home-features-after': () => h(HomePage),
+      'doc-after': () => shouldInsert ? h(HomePage) : null
     })
   },
   enhanceApp({ app }) {

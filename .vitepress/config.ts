@@ -106,19 +106,14 @@ export default ({ mode }: { mode: string }) => {
     },
     themeConfig: {
       logo: '/logo-b.svg',
-
+/*
       editLink: {
         pattern: 'https://github.com/vitest-dev/vitest/edit/main/docs/:path',
         text: 'Suggest changes to this page',
       },
-
+*/
       search: {
         provider: 'local',
-      },
-
-      carbonAds: {
-        code: 'CW7DVKJE',
-        placement: 'vitestdev',
       },
 
       socialLinks: [

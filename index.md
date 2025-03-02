@@ -19,5 +19,4 @@ hero:
     - theme: alt
       text: 联系我们
       link: /contact
-
 ---
